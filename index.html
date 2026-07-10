@@ -159,18 +159,11 @@
     <div class="absolute inset-0" style="background:linear-gradient(to right,#ffffff 0%,#ffffff 24%,rgba(255,255,255,.55) 45%,rgba(255,255,255,0) 66%);"></div>
     <div class="absolute inset-x-0 bottom-0 h-24" style="background:linear-gradient(to bottom,rgba(255,255,255,0),#ffffff);"></div>
     <div class="lg:hidden absolute inset-0" style="background:rgba(255,255,255,.74);"></div>
-    <!-- subtelne geometryczne zielone akcenty -->
-    <svg class="hidden lg:block absolute top-[92px] left-[47%]" width="150" height="150" viewBox="0 0 150 150" fill="none" style="opacity:.9;">
-      <circle cx="120" cy="24" r="8" stroke="#0FBE6E" stroke-width="2.5"/>
-      <path d="M40 18v22M29 29h22" stroke="#0FBE6E" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="16" cy="86" r="3.5" fill="#0FBE6E"/>
-      <path d="M96 84h22" stroke="#0FBE6E" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>
   </div>
 
   <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-16 lg:pb-24 lg:min-h-[84vh] flex flex-col justify-center">
     <div class="max-w-[600px] reveal">
-      <div class="inline-flex items-center gap-3 eyebrow text-steel mb-8">
+      <div class="inline-flex items-center gap-3 font-geist font-medium text-[15px] tracking-[.16em] uppercase text-green mb-8">
         <span class="w-16 h-1 rounded-full bg-green"></span>
         Dentysta Brzesko · Bochnia
       </div>
@@ -275,8 +268,8 @@
 <section id="o-nas" class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
   <div class="grid lg:grid-cols-12 gap-12 items-center lg:items-stretch">
     <div class="lg:col-span-5 reveal flex">
-      <div class="ph zoom rounded-[28px] aspect-[4/3.4] lg:aspect-auto w-full lg:min-h-[540px]">
-        <img src="img/gabinet1.webp" alt="Pacjentka i asystentka w gabinecie stomatologicznym ARTDENT" onerror="this.style.opacity=0" loading="lazy">
+      <div class="ph zoom duo rounded-[28px] aspect-[4/3.4] lg:aspect-auto w-full lg:min-h-[540px]">
+        <img src="img/gabinet1.webp" alt="Pacjentka i asystentka w gabinecie stomatologicznym ARTDENT" onerror="this.style.opacity=0" loading="lazy"><div class="duo-tint"></div>
       </div>
     </div>
     <div class="lg:col-span-7 reveal">
@@ -439,6 +432,20 @@
       </a>
 
     </div>
+  </div>
+</section>
+
+
+<!-- ============ PARALLAX — pełna szerokość, zdjęcie „chowa się" przy scrollu ============ -->
+<section class="relative w-full h-[560px] lg:h-[800px] bg-fixed bg-center bg-cover flex items-center justify-center overflow-hidden" style="background-image:url('img/parallax.jpg');">
+  <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(20,35,28,.6) 0%, rgba(11,138,80,.55) 100%);"></div>
+  <div class="relative text-center px-6 max-w-[840px] reveal">
+    <div class="font-geist font-medium text-[14px] tracking-[.18em] uppercase text-white/80 mb-6">Nowoczesna stomatologia</div>
+    <h2 class="font-sora font-semibold text-white tracking-tightest leading-[1.05] text-[34px] sm:text-[44px] lg:text-[56px]">Twój komfort i&nbsp;zdrowy uśmiech<br>w&nbsp;jednym miejscu.</h2>
+    <a href="#kontakt" class="btn-cta inline-flex items-center gap-3 mt-10 font-sora font-semibold text-[15px] text-graphite bg-white rounded-full pl-6 pr-2 py-2">
+      Umów wizytę
+      <span class="w-9 h-9 rounded-full bg-green flex items-center justify-center text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+    </a>
   </div>
 </section>
 
@@ -697,9 +704,9 @@
         </ul>
       </div>
       <div class="md:col-span-3">
-        <div class="eyebrow text-white/70 mb-4">Dentysta Bochnia</div>
+        <div class="font-sora font-semibold text-[19px] text-white mb-4">Dentysta Bochnia</div>
         <p class="font-geist text-[14px] text-white/85 leading-relaxed">ul. ks. J. Poniatowskiego 22A<br>32-700 Bochnia<br><a href="tel:+48146105993" class="text-white font-medium hover:underline">tel. 14 610 59 93</a></p>
-        <div class="eyebrow text-white/70 mb-4 mt-7">Dentysta Brzesko</div>
+        <div class="font-sora font-semibold text-[19px] text-white mb-4 mt-8">Dentysta Brzesko</div>
         <p class="font-geist text-[14px] text-white/85 leading-relaxed">ul. Legionów Piłsudskiego 30<br>32-800 Brzesko<br><a href="tel:+48146632423" class="text-white font-medium hover:underline">tel. 14 663 24 23</a></p>
       </div>
       <div class="md:col-span-3">
