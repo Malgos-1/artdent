@@ -152,16 +152,20 @@
 
 
 <!-- ================= HERO ================= -->
-<section class="relative overflow-hidden bg-[#EDFBF4]">
-  <!-- tło: zdjęcie z zielonym duotonem, rozmyte, po prawej, zanikające w lewo -->
+<section class="relative overflow-hidden bg-white">
+  <!-- tło: zdjęcie w kolorze (bez zielonego), po prawej; biel po lewej pod tekst -->
   <div class="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
-    <div class="absolute inset-y-0 right-0 w-full lg:w-[64%] overflow-hidden">
-      <img src="img/kontrola.webp" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position:58% center; filter:grayscale(100%) contrast(1.06) brightness(1.12);">
-      <div class="absolute inset-0" style="background:#0FBE6E; mix-blend-mode:multiply; opacity:.9;"></div>
-      <div class="absolute inset-0" style="background:linear-gradient(to right,#EDFBF4 0%,rgba(237,251,244,.92) 22%,rgba(237,251,244,0) 58%);"></div>
-      <div class="absolute inset-x-0 bottom-0 h-24" style="background:linear-gradient(to bottom,rgba(237,251,244,0),#EDFBF4);"></div>
-      <div class="lg:hidden absolute inset-0" style="background:rgba(237,251,244,.72);"></div>
-    </div>
+    <img src="img/hero.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position:82% center;">
+    <div class="absolute inset-0" style="background:linear-gradient(to right,#ffffff 0%,#ffffff 24%,rgba(255,255,255,.55) 45%,rgba(255,255,255,0) 66%);"></div>
+    <div class="absolute inset-x-0 bottom-0 h-24" style="background:linear-gradient(to bottom,rgba(255,255,255,0),#ffffff);"></div>
+    <div class="lg:hidden absolute inset-0" style="background:rgba(255,255,255,.74);"></div>
+    <!-- subtelne geometryczne zielone akcenty -->
+    <svg class="hidden lg:block absolute top-[92px] left-[47%]" width="150" height="150" viewBox="0 0 150 150" fill="none" style="opacity:.9;">
+      <circle cx="120" cy="24" r="8" stroke="#0FBE6E" stroke-width="2.5"/>
+      <path d="M40 18v22M29 29h22" stroke="#0FBE6E" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="16" cy="86" r="3.5" fill="#0FBE6E"/>
+      <path d="M96 84h22" stroke="#0FBE6E" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
   </div>
 
   <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-16 lg:pb-24 lg:min-h-[84vh] flex flex-col justify-center">
@@ -173,7 +177,8 @@
       <h1 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.05] text-[50px] sm:text-[66px] lg:text-[78px]">
         Zdrowy uśmiech<br>w <span class="text-green">precyzyjnych</span><br>rękach.
       </h1>
-      <p class="font-geist text-[16px] leading-[1.7] text-steel max-w-[400px] mt-8">
+      <div class="w-24 h-1.5 rounded-full bg-green mt-9"></div>
+      <p class="font-geist text-[16px] leading-[1.7] text-steel max-w-[400px] mt-7">
         Specjalistyczne przychodnie stomatologiczne w&nbsp;Brzesku i&nbsp;Bochni. Całe leczenie dla rodziny w&nbsp;jednym miejscu — bez rozbijania go na kilka różnych gabinetów.
       </p>
       <div class="flex items-center gap-7 mt-10">
