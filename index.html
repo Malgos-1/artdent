@@ -38,10 +38,6 @@
   .ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .9s cubic-bezier(.2,.7,.2,1), opacity .6s ease; }
   .ph.zoom:hover > img { transform: scale(1.06); }
   .ph::after { content:''; position:absolute; inset:0; background: radial-gradient(120% 90% at 15% 10%, rgba(255,255,255,.22), transparent 60%); pointer-events:none; }
-  /* motyw arki — nawiązanie do kształtu zęba z logo */
-  .arch    { border-radius: 9999px 9999px 2rem 2rem; }
-  .arch-sm { border-radius: 9999px 9999px 1.25rem 1.25rem; }
-
   .nav-link { position: relative; }
   .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0; background:#0FBE6E; transition:width .3s ease; }
   .nav-link:hover::after { width:100%; }
@@ -146,45 +142,56 @@
 
 <!-- ================= HERO ================= -->
 <section class="relative overflow-hidden">
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-16 lg:pt-24 pb-14 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-16 grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
     <div class="lg:col-span-6 reveal">
-      <div class="inline-flex items-center gap-2 eyebrow text-steel mb-7">
-        <span class="w-6 h-px bg-green"></span>
+      <div class="inline-flex items-center gap-3 eyebrow text-steel mb-8">
+        <span class="w-16 h-1 rounded-full bg-green"></span>
         Dentysta Brzesko · Bochnia
       </div>
-      <h1 class="font-sora font-semibold text-graphite tracking-tightest leading-[.96] text-[46px] sm:text-[62px] lg:text-[74px]">
+      <h1 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.05] text-[50px] sm:text-[66px] lg:text-[78px]">
         Zdrowy uśmiech<br>w <span class="text-green">precyzyjnych</span><br>rękach.
       </h1>
-      <p class="font-geist text-[16.5px] leading-relaxed text-steel max-w-[460px] mt-7">
-        Specjalistyczne przychodnie stomatologiczne w&nbsp;Brzesku i&nbsp;Bochni. Oferujemy kompleksowe leczenie zębów w&nbsp;jednym miejscu dla całej rodziny — dzięki nam unikniesz rozbijania leczenia na kilka różnych zakładów specjalistycznych.
+      <p class="font-geist text-[16px] leading-[1.7] text-steel max-w-[400px] mt-8">
+        Specjalistyczne przychodnie stomatologiczne w&nbsp;Brzesku i&nbsp;Bochni. Całe leczenie dla rodziny w&nbsp;jednym miejscu — bez rozbijania go na kilka różnych gabinetów.
       </p>
-      <div class="flex flex-wrap items-center gap-3 mt-9">
+      <div class="flex items-center gap-7 mt-10">
         <a href="#kontakt" class="btn-cta font-sora font-semibold text-[15px] text-white bg-green rounded-full pl-6 pr-2 py-2 flex items-center gap-3">
           Umów wizytę
           <span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </a>
-        <a href="#uslugi" class="font-sora font-medium text-[15px] text-graphite border border-line hover:border-graphite transition rounded-full px-6 py-3.5">Zakres usług</a>
+        <a href="#uslugi" class="group font-sora font-medium text-[15px] text-graphite inline-flex items-center gap-2">
+          Zakres usług
+          <svg class="transition-transform group-hover:translate-x-1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
-      <div class="grid grid-cols-3 gap-6 mt-12 max-w-[470px]">
-        <div><div class="font-sora font-semibold text-[30px] text-graphite tracking-tightest">2</div><div class="font-geist text-[12.5px] text-steel mt-1">przychodnie — Brzesko&nbsp;i&nbsp;Bochnia</div></div>
-        <div><div class="font-sora font-semibold text-[30px] text-graphite tracking-tightest">8</div><div class="font-geist text-[12.5px] text-steel mt-1">dziedzin stomatologii</div></div>
-        <div><div class="font-sora font-semibold text-[30px] text-graphite tracking-tightest">2</div><div class="font-geist text-[12.5px] text-steel mt-1">pracownie radiologii&nbsp;RTG</div></div>
+      <div class="grid grid-cols-3 gap-8 mt-14 pt-8 border-t-2 border-line max-w-[540px]">
+        <div>
+          <div class="font-sora font-semibold text-[34px] text-graphite tracking-tightest leading-none">2</div>
+          <div class="font-geist text-[12.5px] text-steel mt-2 leading-snug">nowoczesne przychodnie</div>
+        </div>
+        <div>
+          <div class="font-sora font-semibold text-[34px] text-graphite tracking-tightest leading-none">8</div>
+          <div class="font-geist text-[12.5px] text-steel mt-2 leading-snug">dziedzin stomatologii</div>
+        </div>
+        <div>
+          <div class="font-sora font-semibold text-[34px] text-graphite tracking-tightest leading-none">3D</div>
+          <div class="font-geist text-[12.5px] text-steel mt-2 leading-snug">własne pracownie&nbsp;RTG</div>
+        </div>
       </div>
     </div>
 
     <div class="lg:col-span-6 reveal">
       <div class="relative">
-        <div class="ph zoom arch aspect-[4/4.6] sm:aspect-[5/5.4] lg:aspect-[4/4.6] shadow-[0_40px_100px_-40px_rgba(20,35,28,.35)]">
+        <div class="ph zoom rounded-[24px] aspect-[4/5] lg:aspect-[5/5.7] shadow-[0_50px_120px_-45px_rgba(20,35,28,.42)]">
           <img src="img/konsultacja.webp" alt="Dentysta ARTDENT omawia zdjęcie RTG z pacjentem" onerror="this.style.opacity=0" loading="eager">
         </div>
-        <div class="absolute -left-3 sm:-left-6 top-8 bg-white rounded-3xl shadow-[0_20px_50px_-24px_rgba(20,35,28,.4)] border border-line px-5 py-4 flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-mint flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0FBE6E"><path d="m12 2 2.9 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 7.1-1.01L12 2Z"/></svg></div>
-          <div><div class="font-sora font-semibold text-[15px] leading-none">Ocena „Doskonała”</div><div class="font-geist text-[11.5px] text-steel mt-1">opinie pacjentów w Google</div></div>
-        </div>
-        <div class="absolute -right-3 sm:-right-5 bottom-8 bg-graphite rounded-3xl shadow-xl px-5 py-4">
-          <div class="eyebrow text-green mb-1">Godziny otwarcia</div>
-          <div class="font-sora font-semibold text-white text-[15px]">Pn–Sob · 9:00 – 20:00</div>
-          <div class="font-geist text-[11.5px] text-white/55 mt-1">Brzesko &amp; Bochnia</div>
+        <div class="absolute left-4 bottom-4 lg:-left-6 lg:bottom-8 bg-white rounded-2xl shadow-[0_24px_60px_-28px_rgba(20,35,28,.45)] px-5 py-3.5 flex items-center gap-4">
+          <div>
+            <div class="text-green text-[14px] tracking-[.15em] leading-none">★★★★★</div>
+            <div class="font-sora font-semibold text-[15px] mt-2 leading-none">Ocena „Doskonała”</div>
+          </div>
+          <div class="w-px h-9 bg-line"></div>
+          <div class="font-geist text-[11.5px] text-steel leading-tight">opinie<br>pacjentów<br>· Google</div>
         </div>
       </div>
     </div>
@@ -203,27 +210,27 @@
 <section class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-16 lg:pt-20">
   <div class="grid md:grid-cols-2 gap-5">
 
-    <!-- Bochnia (ciemny) -->
-    <a href="https://www.google.com/maps/search/?api=1&query=NZOZ+Artdent+Poniatowskiego+22A+Bochnia" target="_blank" rel="noopener" class="btn-cta group rounded-4xl bg-graphite text-white p-8 flex items-start gap-5 relative overflow-hidden reveal">
-      <div class="absolute -right-10 -bottom-14 w-48 h-48 rounded-full bg-green/15"></div>
-      <span class="w-14 h-14 rounded-2xl bg-green flex items-center justify-center shrink-0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+    <!-- Bochnia (szary — Surgical Steel, jak w logo) -->
+    <a href="https://www.google.com/maps/search/?api=1&query=NZOZ+Artdent+Poniatowskiego+22A+Bochnia" target="_blank" rel="noopener" class="svc group rounded-4xl bg-steel p-8 flex items-start gap-5 relative overflow-hidden reveal">
+      <div class="absolute -right-10 -bottom-14 w-48 h-48 rounded-full bg-white/10"></div>
+      <span class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
       <div class="relative flex-1">
         <div class="flex items-center justify-between">
-          <h3 class="font-sora font-semibold text-[24px]">Dentysta Bochnia</h3>
-          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          <h3 class="font-sora font-semibold text-[24px] text-graphite">Dentysta Bochnia</h3>
+          <svg class="svc-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14231C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </div>
-        <p class="font-geist text-[14.5px] text-white/60 mt-2">ul. ks. J. Poniatowskiego 22A, 32-700 Bochnia</p>
+        <p class="font-geist text-[14.5px] text-graphite/80 mt-2">ul. ks. J. Poniatowskiego 22A, 32-700 Bochnia</p>
         <div class="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4">
-          <span class="font-sora font-semibold text-[19px] text-green inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>tel. 14 610 59 93</span>
-          <span class="font-geist text-[13px] text-white/45">Pn–Sob · 9:00–20:00</span>
+          <span class="font-sora font-semibold text-[19px] text-graphite inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14231C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>tel. 14 610 59 93</span>
+          <span class="font-geist text-[13px] text-graphite/60">Pn–Sob · 9:00–20:00</span>
         </div>
       </div>
     </a>
 
-    <!-- Brzesko (jasny) -->
-    <a href="https://www.google.com/maps/search/?api=1&query=NZOZ+Artdent+Legionów+Piłsudskiego+30+Brzesko" target="_blank" rel="noopener" class="svc group rounded-4xl bg-white border border-line p-8 flex items-start gap-5 relative overflow-hidden reveal">
-      <div class="absolute -right-10 -bottom-14 w-48 h-48 rounded-full bg-mint opacity-70"></div>
-      <span class="w-14 h-14 rounded-2xl bg-mint flex items-center justify-center shrink-0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+    <!-- Brzesko (jasny zielony — Mint) -->
+    <a href="https://www.google.com/maps/search/?api=1&query=NZOZ+Artdent+Legionów+Piłsudskiego+30+Brzesko" target="_blank" rel="noopener" class="svc group rounded-4xl bg-mint p-8 flex items-start gap-5 relative overflow-hidden reveal">
+      <div class="absolute -right-10 -bottom-14 w-48 h-48 rounded-full bg-white opacity-60"></div>
+      <span class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
       <div class="relative flex-1">
         <div class="flex items-center justify-between">
           <h3 class="font-sora font-semibold text-[24px] text-graphite">Dentysta Brzesko</h3>
@@ -245,7 +252,7 @@
 <section id="o-nas" class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
   <div class="grid lg:grid-cols-12 gap-12 items-center">
     <div class="lg:col-span-5 reveal">
-      <div class="ph zoom arch aspect-[4/4.6]">
+      <div class="ph zoom rounded-[28px] aspect-[4/3.4]">
         <img src="img/gabinet1.webp" alt="Pacjentka i asystentka w gabinecie stomatologicznym ARTDENT" onerror="this.style.opacity=0" loading="lazy">
       </div>
     </div>
@@ -392,6 +399,22 @@
         </div>
       </a>
 
+      <!-- CTA — wypełnia siatkę, mocny intensywny zielony -->
+      <a href="#kontakt" class="svc group lg:col-span-2 rounded-4xl bg-green p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 min-h-[240px] relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-12 w-52 h-52 rounded-full bg-white/10"></div>
+        <div class="relative flex items-start gap-5">
+          <span class="w-14 h-14 rounded-2xl bg-graphite/10 flex items-center justify-center shrink-0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14231C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m9 15 2 2 4-4"/></svg></span>
+          <div>
+            <h3 class="font-sora font-semibold text-[24px] text-graphite">Nie wiesz, od czego zacząć?</h3>
+            <p class="font-geist text-[14px] text-graphite/75 mt-2 max-w-[380px] leading-relaxed">Umów bezpłatny przegląd — obejrzymy zęby, pokażemy zdjęcia i&nbsp;przygotujemy plan leczenia z&nbsp;wyceną.</p>
+          </div>
+        </div>
+        <span class="btn-cta relative shrink-0 self-start sm:self-auto font-sora font-semibold text-[15px] text-white bg-graphite rounded-full pl-6 pr-2 py-2 inline-flex items-center gap-3">
+          Umów przegląd
+          <span class="w-9 h-9 rounded-full bg-green flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </span>
+      </a>
+
     </div>
   </div>
 </section>
@@ -483,19 +506,19 @@
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a href="#" class="group reveal">
-        <div class="ph zoom arch-sm aspect-[4/3.2] mb-5"><img src="img/usluga2.jpg" alt="Leczenie kanałowe" onerror="this.style.opacity=0" loading="lazy"></div>
+        <div class="ph zoom rounded-[22px] aspect-[4/3] mb-5"><img src="img/usluga2.jpg" alt="Leczenie kanałowe" onerror="this.style.opacity=0" loading="lazy"></div>
         <div class="eyebrow text-steel mb-2">Endodoncja</div>
         <h3 class="font-sora font-semibold text-[19px] text-graphite leading-snug group-hover:text-green transition">Leczenie kanałowe — jak ratujemy ząb</h3>
         <p class="font-geist text-[14px] text-steel mt-2 leading-relaxed">Procedura, która pozwala uratować ząb uszkodzony w&nbsp;wyniku zapalenia miazgi — dzięki nowoczesnym technologiom.</p>
       </a>
       <a href="#" class="group reveal">
-        <div class="ph zoom arch-sm aspect-[4/3.2] mb-5"><img src="img/usluga1.jpg" alt="Higienizacja i profilaktyka" onerror="this.style.opacity=0" loading="lazy"></div>
+        <div class="ph zoom rounded-[22px] aspect-[4/3] mb-5"><img src="img/usluga1.jpg" alt="Higienizacja i profilaktyka" onerror="this.style.opacity=0" loading="lazy"></div>
         <div class="eyebrow text-steel mb-2">Profilaktyka</div>
         <h3 class="font-sora font-semibold text-[19px] text-graphite leading-snug group-hover:text-green transition">Higienizacja i&nbsp;usuwanie kamienia</h3>
         <p class="font-geist text-[14px] text-steel mt-2 leading-relaxed">Regularne kontrole i&nbsp;usuwanie złogów nazębnych. Ekspresowy termin na higienizację w&nbsp;ramach programu dla pacjentów.</p>
       </a>
       <a href="#" class="group reveal">
-        <div class="ph zoom arch-sm aspect-[4/3.2] mb-5"><img src="img/usluga4.jpg" alt="Ortodoncja i aparaty" onerror="this.style.opacity=0" loading="lazy"></div>
+        <div class="ph zoom rounded-[22px] aspect-[4/3] mb-5"><img src="img/usluga4.jpg" alt="Ortodoncja i aparaty" onerror="this.style.opacity=0" loading="lazy"></div>
         <div class="eyebrow text-steel mb-2">Ortodoncja</div>
         <h3 class="font-sora font-semibold text-[19px] text-graphite leading-snug group-hover:text-green transition">Równe łuki zębowe — dla kogo aparat?</h3>
         <p class="font-geist text-[14px] text-steel mt-2 leading-relaxed">Zdrowy i&nbsp;zadbany uśmiech to najlepsza wizytówka. Podpowiadamy, kiedy warto rozważyć leczenie ortodontyczne.</p>
