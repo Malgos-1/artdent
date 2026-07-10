@@ -152,9 +152,20 @@
 
 
 <!-- ================= HERO ================= -->
-<section class="relative overflow-hidden">
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-16 grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-    <div class="lg:col-span-6 reveal">
+<section class="relative overflow-hidden bg-[#EDFBF4]">
+  <!-- tło: zdjęcie z zielonym duotonem, rozmyte, po prawej, zanikające w lewo -->
+  <div class="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
+    <div class="absolute inset-y-0 right-0 w-full lg:w-[64%] overflow-hidden">
+      <img src="img/konsultacja.webp" alt="" class="absolute inset-0 w-full h-full object-cover" style="object-position:70% center; filter:grayscale(100%) contrast(1.02) brightness(1.18) blur(5px); transform:scale(1.08);">
+      <div class="absolute inset-0" style="background:#0FBE6E; mix-blend-mode:multiply; opacity:.9;"></div>
+      <div class="absolute inset-0" style="background:linear-gradient(to right,#EDFBF4 0%,rgba(237,251,244,.92) 22%,rgba(237,251,244,0) 58%);"></div>
+      <div class="absolute inset-x-0 bottom-0 h-24" style="background:linear-gradient(to bottom,rgba(237,251,244,0),#EDFBF4);"></div>
+      <div class="lg:hidden absolute inset-0" style="background:rgba(237,251,244,.72);"></div>
+    </div>
+  </div>
+
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-16 lg:pb-24 lg:min-h-[84vh] flex flex-col justify-center">
+    <div class="max-w-[600px] reveal">
       <div class="inline-flex items-center gap-3 eyebrow text-steel mb-8">
         <span class="w-16 h-1 rounded-full bg-green"></span>
         Dentysta Brzesko · Bochnia
@@ -190,24 +201,17 @@
         </div>
       </div>
     </div>
-
-    <div class="lg:col-span-6 reveal">
-      <div class="relative">
-        <div class="ph zoom rounded-[24px] aspect-[4/5] lg:aspect-[5/5.7] shadow-[0_50px_120px_-45px_rgba(20,35,28,.42)]">
-          <img src="img/konsultacja.webp" alt="Dentysta ARTDENT omawia zdjęcie RTG z pacjentem" onerror="this.style.opacity=0" loading="eager">
-        </div>
-        <div class="absolute left-4 bottom-4 lg:-left-6 lg:bottom-8 bg-white rounded-2xl shadow-[0_24px_60px_-28px_rgba(20,35,28,.45)] px-5 py-3.5 flex items-center gap-4">
-          <div>
-            <div class="text-green text-[14px] tracking-[.15em] leading-none">★★★★★</div>
-            <div class="font-sora font-semibold text-[15px] mt-2 leading-none">Ocena „Doskonała”</div>
-          </div>
-          <div class="w-px h-9 bg-line"></div>
-          <div class="font-geist text-[11.5px] text-steel leading-tight">opinie<br>pacjentów<br>· Google</div>
-        </div>
-      </div>
-    </div>
   </div>
 
+  <!-- ocena — na zdjęciu po prawej -->
+  <div class="hidden lg:flex absolute right-10 xl:right-16 bottom-12 z-10 bg-white rounded-2xl shadow-[0_24px_60px_-28px_rgba(20,35,28,.5)] px-5 py-3.5 items-center gap-4">
+    <div>
+      <div class="text-green text-[14px] tracking-[.15em] leading-none">★★★★★</div>
+      <div class="font-sora font-semibold text-[15px] mt-2 leading-none">Ocena „Doskonała”</div>
+    </div>
+    <div class="w-px h-9 bg-line"></div>
+    <div class="font-geist text-[11.5px] text-steel leading-tight">opinie<br>pacjentów<br>· Google</div>
+  </div>
 </section>
 
 
@@ -266,8 +270,8 @@
 <section id="o-nas" class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
   <div class="grid lg:grid-cols-12 gap-12 items-center lg:items-stretch">
     <div class="lg:col-span-5 reveal flex">
-      <div class="ph zoom duo rounded-[28px] aspect-[4/3.4] lg:aspect-auto w-full lg:min-h-[540px]">
-        <img src="img/gabinet1.webp" alt="Pacjentka i asystentka w gabinecie stomatologicznym ARTDENT" onerror="this.style.opacity=0" loading="lazy"><div class="duo-tint"></div>
+      <div class="ph zoom rounded-[28px] aspect-[4/3.4] lg:aspect-auto w-full lg:min-h-[540px]">
+        <img src="img/gabinet1.webp" alt="Pacjentka i asystentka w gabinecie stomatologicznym ARTDENT" onerror="this.style.opacity=0" loading="lazy">
       </div>
     </div>
     <div class="lg:col-span-7 reveal">
@@ -703,10 +707,7 @@
         <a href="#kontakt" class="btn-cta inline-flex items-center gap-2 mt-6 font-sora font-semibold text-[14px] text-graphite bg-white rounded-full px-5 py-2.5">Umów wizytę<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
     </div>
-    <div class="pt-14 pb-4 overflow-hidden">
-      <div class="font-sora font-semibold tracking-tightest leading-none text-center select-none" style="font-size:clamp(44px,11vw,150px);"><span class="text-white">art</span><span class="text-white/30">dent</span></div>
-    </div>
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 font-geist text-[12.5px] text-white/70">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-8 font-geist text-[12.5px] text-white/70">
       <span>© 2026 NZOZ Artdent. Wszelkie prawa zastrzeżone.</span>
       <span>Dentysta Brzesko &amp; Bochnia</span>
     </div>
