@@ -1,0 +1,5 @@
+# do repo trafia tylko strona i zdjęcia
+/*
+!/index.html
+!/img/
+!/.gitignore
