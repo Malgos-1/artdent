@@ -1,0 +1,9 @@
+# na produkcję tylko index.html + img/ (reszta to pliki robocze/inspiracje)
+/*.png
+/*.jpg
+/*.jpeg
+/*.svg
+/*.pdf
+/*.html.dc.html
+/Zrzut*
+/.claude
