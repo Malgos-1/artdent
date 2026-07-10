@@ -77,23 +77,23 @@
 <div class="bg-graphite text-white">
   <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-10 font-geist text-[12.5px]">
     <!-- Bochnia -->
-    <div class="flex items-center gap-2.5">
+    <div class="flex items-center justify-between sm:justify-start gap-2.5">
       <span class="inline-flex items-center gap-1.5 text-green font-medium shrink-0">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         Dentysta Bochnia
       </span>
-      <span class="text-white/55">ul. ks. J. Poniatowskiego 22A, 32-700</span>
-      <a href="tel:+48146105993" class="text-white hover:text-green transition font-medium">tel. 14 610 59 93</a>
+      <span class="hidden lg:inline text-white/55">ul. ks. J. Poniatowskiego 22A, 32-700</span>
+      <a href="tel:+48146105993" class="text-white hover:text-green transition font-medium whitespace-nowrap">tel. 14 610 59 93</a>
     </div>
     <span class="hidden sm:block w-px h-4 bg-white/15"></span>
     <!-- Brzesko -->
-    <div class="flex items-center gap-2.5">
+    <div class="flex items-center justify-between sm:justify-start gap-2.5">
       <span class="inline-flex items-center gap-1.5 text-green font-medium shrink-0">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         Dentysta Brzesko
       </span>
-      <span class="text-white/55">ul. Legionów Piłsudskiego 30, 32-800</span>
-      <a href="tel:+48146632423" class="text-white hover:text-green transition font-medium">tel. 14 663 24 23</a>
+      <span class="hidden lg:inline text-white/55">ul. Legionów Piłsudskiego 30, 32-800</span>
+      <a href="tel:+48146632423" class="text-white hover:text-green transition font-medium whitespace-nowrap">tel. 14 663 24 23</a>
     </div>
   </div>
 </div>
@@ -166,16 +166,16 @@
       <div class="font-geist font-medium text-[15px] tracking-[.16em] uppercase text-green mb-8">
         Dentysta Brzesko · Bochnia
       </div>
-      <h1 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.05] text-[50px] sm:text-[66px] lg:text-[78px]">
+      <h1 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.05] text-[42px] sm:text-[66px] lg:text-[78px]">
         Zdrowy uśmiech<br>w <span class="text-green">precyzyjnych</span><br>rękach.
       </h1>
       <div class="w-24 h-1.5 rounded-full bg-green mt-9"></div>
-      <div class="flex items-center gap-7 mt-8">
-        <a href="#kontakt" class="btn-cta font-sora font-semibold text-[15px] text-white bg-green rounded-full pl-6 pr-2 py-2 flex items-center gap-3">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-7 mt-8">
+        <a href="#kontakt" class="btn-cta font-sora font-semibold text-[15px] text-white bg-green rounded-full pl-6 pr-2 py-2 flex items-center justify-between sm:justify-start gap-3 w-full sm:w-auto">
           Umów wizytę
-          <span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          <span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
         </a>
-        <a href="#uslugi" class="group font-sora font-medium text-[15px] text-green border-2 border-green hover:bg-green hover:text-white transition inline-flex items-center gap-2 rounded-full px-6 py-3">
+        <a href="#uslugi" class="group font-sora font-medium text-[15px] text-green border-2 border-green hover:bg-green hover:text-white transition flex sm:inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 w-full sm:w-auto">
           Zakres usług
           <svg class="transition-transform group-hover:translate-x-1" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -422,7 +422,7 @@
 
 
 <!-- ============ PARALLAX, pełna szerokość, zdjęcie „chowa się" przy scrollu ============ -->
-<section class="relative w-full h-[560px] lg:h-[800px] bg-fixed bg-center bg-cover flex items-center justify-center overflow-hidden" style="background-image:url('img/parallax.jpg');">
+<section class="relative w-full h-[440px] lg:h-[800px] bg-scroll lg:bg-fixed bg-center bg-cover flex items-center justify-center overflow-hidden" style="background-image:url('img/parallax.jpg');">
   <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(20,35,28,.6) 0%, rgba(11,138,80,.55) 100%);"></div>
   <div class="relative text-center px-6 max-w-[840px] reveal">
     <div class="font-geist font-medium text-[14px] tracking-[.18em] uppercase text-white/80 mb-6">Nowoczesna stomatologia</div>
@@ -440,7 +440,7 @@
   <div class="grid lg:grid-cols-12 gap-10 items-start">
     <div class="lg:col-span-4 reveal lg:sticky lg:top-28">
       <div class="eyebrow text-green mb-5">Jak leczymy</div>
-      <h2 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.05] text-[30px] lg:text-[36px] break-words [hyphens:auto] pr-2">Wysokospecjalistyczne leczenie w&nbsp;ARTDENT.</h2>
+      <h2 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.08] text-[25px] sm:text-[30px] lg:text-[36px] pr-2">Wysokospecjalistyczne leczenie w&nbsp;ARTDENT.</h2>
       <p class="font-geist text-[15.5px] text-steel mt-6 leading-relaxed max-w-[360px]">U nas leczenie zębów bez bólu i&nbsp;stresu, to dentysta dla każdego pacjenta.</p>
     </div>
     <div class="lg:col-span-8 space-y-4">
@@ -484,10 +484,10 @@
 
       <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
         <!-- Bony, bohater, ciemna karta -->
-        <div class="sm:col-span-2 rounded-3xl bg-graphite text-white p-7 flex items-center gap-6 relative overflow-hidden">
-          <span class="w-16 h-16 rounded-2xl bg-green flex items-center justify-center shrink-0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M4 12v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8M12 8v13"/><path d="M12 8S9.5 3.5 7 5.5 8.5 8 12 8Zm0 0s2.5-4.5 5-2.5S15.5 8 12 8Z"/></svg></span>
-          <div>
-            <div class="font-sora font-semibold text-[22px]">Bony podarunkowe ARTDENT</div>
+        <div class="sm:col-span-2 rounded-3xl bg-graphite text-white p-7 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 relative overflow-hidden">
+          <span class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-green flex items-center justify-center shrink-0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M4 12v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8M12 8v13"/><path d="M12 8S9.5 3.5 7 5.5 8.5 8 12 8Zm0 0s2.5-4.5 5-2.5S15.5 8 12 8Z"/></svg></span>
+          <div class="min-w-0">
+            <div class="font-sora font-semibold text-[19px] sm:text-[22px]">Bony podarunkowe ARTDENT</div>
             <div class="font-geist text-[13.5px] text-white/65 mt-1.5 leading-relaxed">Dowolna kwota lub konkretny zabieg, elegancki prezent zdrowia dla całej rodziny.</div>
           </div>
         </div>
