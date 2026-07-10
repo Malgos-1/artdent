@@ -670,43 +670,51 @@
 <!-- ================= FOOTER ================= -->
 <footer class="bg-green text-white">
   <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 pb-10">
-    <div class="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/25">
-      <div class="md:col-span-3">
-        <div class="flex items-center gap-3 mb-5">
-          <span class="relative inline-block" style="width:26px;height:32px;"><svg width="26" height="32" viewBox="0 0 100 120" fill="none"><path d="M50 12C31 12 20 24 20 45c0 20 6 44 12 59 3 8 10 8 12 0l3.5-29c.7-6 4.3-6 5 0L56 104c2 8 9 8 12 0 6-15 12-39 12-59C80 24 69 12 50 12Z" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/><path d="M36 51 Q50 65 64 51" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/></svg></span>
-          <span class="font-sora font-semibold text-[22px] tracking-tightest"><span class="text-white">art</span><span class="text-white/60">dent</span></span>
+    <!-- góra: logo + opis + NIP w jednej linii -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-8 border-b border-white/25">
+      <div class="flex items-center gap-3 shrink-0">
+        <span class="relative inline-block" style="width:26px;height:32px;"><svg width="26" height="32" viewBox="0 0 100 120" fill="none"><path d="M50 12C31 12 20 24 20 45c0 20 6 44 12 59 3 8 10 8 12 0l3.5-29c.7-6 4.3-6 5 0L56 104c2 8 9 8 12 0 6-15 12-39 12-59C80 24 69 12 50 12Z" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/><path d="M36 51 Q50 65 64 51" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/></svg></span>
+        <span class="font-sora font-semibold text-[22px] tracking-tightest"><span class="text-white">art</span><span class="text-white/60">dent</span></span>
+      </div>
+      <p class="font-geist text-[14.5px] text-white/90 leading-relaxed md:text-right">Specjalistyczne przychodnie stomatologiczne dla całej rodziny, Brzesko i Bochnia.<span class="text-white/60"> &nbsp;·&nbsp; NZOZ Artdent · NIP 8691339810</span></p>
+    </div>
+
+    <!-- menu w jednej linii -->
+    <nav class="flex flex-wrap gap-x-8 gap-y-2 py-7 border-b border-white/25 font-geist text-[15px] text-white">
+      <a href="#o-nas" class="hover:underline">O nas</a>
+      <a href="#uslugi" class="hover:underline">Zakres usług</a>
+      <a href="#aktualnosci" class="hover:underline">Aktualności</a>
+      <a href="#promocje" class="hover:underline">Promocje</a>
+      <a href="#opinie" class="hover:underline">Opinie / Porady</a>
+      <a href="#gabinety" class="hover:underline">Nasze gabinety</a>
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
+    </nav>
+
+    <!-- dwie kolumny: gabinety | godziny -->
+    <div class="grid md:grid-cols-2 gap-10 lg:gap-16 pt-9 pb-14">
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div>
+          <div class="font-sora font-semibold text-[21px] text-white mb-3">Dentysta Bochnia</div>
+          <p class="font-geist text-[15.5px] text-white/95 leading-relaxed">ul. ks. J. Poniatowskiego 22A<br>32-700 Bochnia<br><a href="tel:+48146105993" class="text-white font-semibold hover:underline">tel. 14 610 59 93</a></p>
         </div>
-        <p class="font-geist text-[14.5px] text-white/90 leading-relaxed max-w-[260px]">Specjalistyczne przychodnie stomatologiczne dla całej rodziny, Brzesko i Bochnia.</p>
-        <p class="font-geist text-[12.5px] text-white/70 mt-4">NZOZ Artdent · NIP 8691339810</p>
+        <div>
+          <div class="font-sora font-semibold text-[21px] text-white mb-3">Dentysta Brzesko</div>
+          <p class="font-geist text-[15.5px] text-white/95 leading-relaxed">ul. Legionów Piłsudskiego 30<br>32-800 Brzesko<br><a href="tel:+48146632423" class="text-white font-semibold hover:underline">tel. 14 663 24 23</a></p>
+        </div>
       </div>
-      <div class="md:col-span-3">
-        <div class="eyebrow text-white/80 mb-5">Menu</div>
-        <ul class="grid grid-cols-2 gap-x-6 gap-y-3.5 font-geist text-[15px] text-white">
-          <li><a href="#o-nas" class="hover:underline">O nas</a></li>
-          <li><a href="#promocje" class="hover:underline">Promocje</a></li>
-          <li><a href="#uslugi" class="hover:underline">Zakres usług</a></li>
-          <li><a href="#opinie" class="hover:underline">Opinie / Porady</a></li>
-          <li><a href="#aktualnosci" class="hover:underline">Aktualności</a></li>
-          <li><a href="#gabinety" class="hover:underline">Nasze gabinety</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-3">
-        <div class="font-sora font-semibold text-[21px] text-white mb-3">Dentysta Bochnia</div>
-        <p class="font-geist text-[15.5px] text-white/95 leading-relaxed">ul. ks. J. Poniatowskiego 22A<br>32-700 Bochnia<br><a href="tel:+48146105993" class="text-white font-semibold hover:underline">tel. 14 610 59 93</a></p>
-        <div class="font-sora font-semibold text-[21px] text-white mb-3 mt-7">Dentysta Brzesko</div>
-        <p class="font-geist text-[15.5px] text-white/95 leading-relaxed">ul. Legionów Piłsudskiego 30<br>32-800 Brzesko<br><a href="tel:+48146632423" class="text-white font-semibold hover:underline">tel. 14 663 24 23</a></p>
-      </div>
-      <div class="md:col-span-3">
-        <div class="eyebrow text-white/80 mb-5">Godziny</div>
-        <ul class="font-geist text-[15.5px] text-white/95 space-y-2.5">
+      <div>
+        <div class="eyebrow text-white/80 mb-4">Godziny</div>
+        <ul class="font-geist text-[15.5px] text-white/95 space-y-2.5 max-w-[340px]">
           <li class="flex justify-between gap-4"><span>Poniedziałek – Sobota</span><span class="text-white font-semibold whitespace-nowrap">9:00 – 20:00</span></li>
           <li class="flex justify-between gap-4"><span>Niedziela</span><span class="text-white/70">nieczynne</span></li>
         </ul>
-        <p class="font-geist text-[15px] text-white/95 mt-5">E-mail: <a href="mailto:ojczyk@tlen.pl" class="text-white font-semibold hover:underline">ojczyk@tlen.pl</a></p>
+        <p class="font-geist text-[15px] text-white/95 mt-4">E-mail: <a href="mailto:ojczyk@tlen.pl" class="text-white font-semibold hover:underline">ojczyk@tlen.pl</a></p>
         <a href="#kontakt" class="btn-cta inline-flex items-center gap-2 mt-6 font-sora font-semibold text-[14px] text-graphite bg-white rounded-full px-5 py-2.5">Umów wizytę<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-8 font-geist text-[12.5px] text-white/70">
+
+    <!-- copyright -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-white/25 font-geist text-[12.5px] text-white/70">
       <span>© 2026 NZOZ Artdent. Wszelkie prawa zastrzeżone.</span>
       <span>Dentysta Brzesko &amp; Bochnia</span>
     </div>
