@@ -75,25 +75,25 @@
 
 <!-- ============ GÓRNY PASEK: DWA GABINETY (jak na ojczyk.pl) ============ -->
 <div class="bg-graphite text-white">
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-10 font-geist text-[12.5px]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-2.5 flex flex-row sm:items-center sm:justify-center items-start gap-6 sm:gap-10 font-geist text-[12.5px]">
     <!-- Bochnia -->
-    <div class="flex items-center justify-between sm:justify-start gap-2.5">
+    <div class="flex-1 sm:flex-none flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5">
       <span class="inline-flex items-center gap-1.5 text-green font-medium shrink-0">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         Dentysta Bochnia
       </span>
       <span class="hidden lg:inline text-white/55">ul. ks. J. Poniatowskiego 22A, 32-700</span>
-      <a href="tel:+48146105993" class="text-white hover:text-green transition font-medium whitespace-nowrap">tel. 14 610 59 93</a>
+      <a href="tel:+48146105993" class="text-white hover:text-green transition font-medium whitespace-nowrap pl-[22px] sm:pl-0">tel. 14 610 59 93</a>
     </div>
     <span class="hidden sm:block w-px h-4 bg-white/15"></span>
     <!-- Brzesko -->
-    <div class="flex items-center justify-between sm:justify-start gap-2.5">
+    <div class="flex-1 sm:flex-none flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5">
       <span class="inline-flex items-center gap-1.5 text-green font-medium shrink-0">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0FBE6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         Dentysta Brzesko
       </span>
       <span class="hidden lg:inline text-white/55">ul. Legionów Piłsudskiego 30, 32-800</span>
-      <a href="tel:+48146632423" class="text-white hover:text-green transition font-medium whitespace-nowrap">tel. 14 663 24 23</a>
+      <a href="tel:+48146632423" class="text-white hover:text-green transition font-medium whitespace-nowrap pl-[22px] sm:pl-0">tel. 14 663 24 23</a>
     </div>
   </div>
 </div>
@@ -422,8 +422,9 @@
 
 
 <!-- ============ PARALLAX, pełna szerokość, zdjęcie „chowa się" przy scrollu ============ -->
-<section class="relative w-full h-[440px] lg:h-[800px] bg-scroll lg:bg-fixed bg-center bg-cover flex items-center justify-center overflow-hidden" style="background-image:url('img/parallax.jpg');">
-  <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(20,35,28,.6) 0%, rgba(11,138,80,.55) 100%);"></div>
+<section class="relative w-full h-[440px] lg:h-[800px] bg-scroll lg:bg-fixed bg-center bg-cover flex items-center justify-center overflow-hidden" style="background-image:url('img/parallax-bw.jpg');">
+  <div class="absolute inset-0" style="background:#0FBE6E; mix-blend-mode:multiply;"></div>
+  <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(11,138,80,.2) 0%, rgba(8,90,60,.55) 100%);"></div>
   <div class="relative text-center px-6 max-w-[840px] reveal">
     <div class="font-geist font-medium text-[14px] tracking-[.18em] uppercase text-white/80 mb-6">Nowoczesna stomatologia</div>
     <h2 class="font-sora font-semibold text-white tracking-tightest leading-[1.05] text-[34px] sm:text-[44px] lg:text-[56px]">Twój komfort i&nbsp;zdrowy uśmiech<br>w&nbsp;jednym miejscu.</h2>
@@ -547,7 +548,7 @@
 
 
 <!-- ================= OPINIE / PORADY ================= -->
-<section id="opinie" class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
+<section id="opinie" class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 lg:pt-24 pb-14 lg:pb-16">
   <div class="grid lg:grid-cols-12 gap-12 items-center">
     <div class="lg:col-span-5 reveal">
       <div class="eyebrow text-green mb-5">Opinie / Porady</div>
@@ -565,8 +566,8 @@
       <div class="mt-8">
         <div class="eyebrow text-steel mb-3">Współpracujemy z</div>
         <div class="flex flex-wrap gap-3">
-          <span class="font-geist text-[13px] text-steel border border-line rounded-full px-4 py-2">Compensa</span>
-          <span class="font-geist text-[13px] text-steel border border-line rounded-full px-4 py-2">LUX MED</span>
+          <span class="font-geist font-medium text-[13px] text-green border border-green rounded-full px-4 py-2">Compensa</span>
+          <span class="font-geist font-medium text-[13px] text-green border border-green rounded-full px-4 py-2">LUX MED</span>
         </div>
       </div>
     </div>
@@ -579,13 +580,13 @@
           Udostępniamy szerokie kompendium wiedzy o&nbsp;wszystkich dziedzinach stomatologii, artykuły przygotowane i&nbsp;napisane dla Państwa przez naszych specjalistów.
         </p>
         <div class="flex flex-wrap gap-2.5 mt-7">
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Ortodoncja</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Protetyka</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Stomatologia zachowawcza</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Periodontologia</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Implanty</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Radiologia</span>
-          <span class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line">Profilaktyka stomatologiczna</span>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Ortodoncja</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Protetyka</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Stomatologia zachowawcza</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Periodontologia</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Implanty</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Radiologia</a>
+          <a href="#aktualnosci" class="font-geist text-[13.5px] text-graphite bg-white rounded-full px-4 py-2.5 border border-line hover:border-green hover:text-green transition">Profilaktyka stomatologiczna</a>
         </div>
       </div>
     </div>
@@ -595,8 +596,8 @@
 
 <!-- ================= NASZE GABINETY ================= -->
 <section id="gabinety" class="bg-mint-2 border-y border-line">
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
-    <div class="mb-14 reveal">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 pt-16 lg:pt-20 pb-24 lg:pb-28">
+    <div class="mb-12 reveal">
       <div class="eyebrow text-green mb-5">Nasze gabinety</div>
       <h2 class="font-sora font-semibold text-graphite tracking-tightest leading-[1.02] text-[34px] lg:text-[48px]">Dwie lokalizacje,<br>ten sam standard.</h2>
     </div>
